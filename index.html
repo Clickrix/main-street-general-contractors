@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Street General Contractors Inc. | Licensed Roofing & General Contractor — Downers Grove / Lombard, Illinois</title>
+<meta name="description" content="Main Street General Contractors Inc. — licensed Illinois roofing contractor and general contractor. Roofing, siding, carpentry, remodeling. 73+ permits since 2017. Free estimates: (800) 510-1028.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{ --primary:#991b1b; --dark:#450a0a; --accent:#fca5a5; --light:#fef2f2; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:#1f2937;line-height:1.6;background:#fff}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.brand{font-weight:800;font-size:1.25rem;color:var(--dark);text-decoration:none}
+.brand span{color:var(--primary)}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{text-decoration:none;color:#374151;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--primary)}
+.btn{display:inline-block;background:var(--primary);color:#fff !important;padding:12px 28px;border-radius:8px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.btn-outline{background:transparent;border:2px solid #fff;color:#fff !important}
+.hero{background:linear-gradient(135deg,var(--dark) 0%,var(--primary) 100%);color:#fff;padding:90px 0 100px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.12),transparent 50%)}
+.hero .wrap{position:relative;z-index:1}
+.hero .kicker{display:inline-block;background:rgba(255,255,255,.15);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;line-height:1.15;margin-bottom:18px;max-width:640px}
+.hero p.sub{font-size:1.15rem;opacity:.92;max-width:560px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.trust{background:var(--light);padding:22px 0;border-bottom:1px solid #e5e7eb}
+.trust .wrap{display:flex;gap:32px;justify-content:center;flex-wrap:wrap;text-align:center}
+.trust .t{font-weight:700;color:var(--dark);font-size:.95rem}
+.trust .t small{display:block;font-weight:500;color:#6b7280;font-size:.8rem}
+section{padding:72px 0}
+h2.sec{font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;color:var(--dark);text-align:center;margin-bottom:12px}
+p.secsub{text-align:center;color:#6b7280;max-width:640px;margin:0 auto 44px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:30px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.1)}
+.card .icon{width:52px;height:52px;border-radius:12px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:800;margin-bottom:18px}
+.card h3{font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:10px}
+.card p{color:#6b7280;font-size:.95rem}
+.about{background:var(--light)}
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about h2{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;color:var(--dark);margin-bottom:16px}
+.about p{color:#4b5563;margin-bottom:16px}
+.checks{list-style:none;margin-top:20px}
+.checks li{padding:8px 0;font-weight:600;color:var(--dark);display:flex;gap:10px;align-items:center}
+.checks li::before{content:"\2713";color:var(--primary);font-weight:800;font-size:1.1rem}
+.testimonials .grid3{align-items:stretch}
+.tcard{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:28px;display:flex;flex-direction:column}
+.tcard .stars{color:#f59e0b;font-size:1.1rem;margin-bottom:12px;letter-spacing:2px}
+.tcard p{font-style:italic;color:#4b5563;flex:1}
+.tcard .who{margin-top:16px;font-weight:700;color:var(--dark)}
+.tcard .who small{display:block;font-weight:500;color:#6b7280}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;text-align:center}
+.step .num{width:56px;height:56px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.4rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{color:var(--dark);margin-bottom:8px}
+.step p{color:#6b7280;font-size:.95rem}
+.cta-band{background:linear-gradient(135deg,var(--dark),var(--primary));color:#fff;text-align:center;padding:72px 20px}
+.cta-band h2{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;margin-bottom:14px}
+.cta-band p{opacity:.9;margin-bottom:28px;font-size:1.1rem}
+.contact .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:8px}
+.cbox{text-align:center;background:var(--light);border-radius:14px;padding:36px 24px}
+.cbox .clabel{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#6b7280;margin-bottom:8px}
+.cbox a{font-size:1.25rem;font-weight:800;color:var(--dark);text-decoration:none;word-break:break-word}
+.cbox a:hover{color:var(--primary)}
+.cbox p{color:#6b7280;font-size:.95rem;margin-top:8px}
+.cbox .darktext{font-size:1.1rem;font-weight:700;color:var(--dark);margin-top:8px}
+footer{background:var(--dark);color:#9ca3af;padding:36px 0;text-align:center;font-size:.9rem}
+footer .fbrand{color:#fff;font-weight:800;font-size:1.1rem;margin-bottom:8px}
+.faq details{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:18px 22px;margin-bottom:12px;max-width:760px;margin-left:auto;margin-right:auto}
+.faq summary{font-weight:700;color:var(--dark);cursor:pointer}
+.faq details p{margin-top:10px;color:#6b7280}
+.mobile-toggle{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--dark)}
+@media(max-width:820px){
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,.1);gap:18px;align-items:flex-start}
+ .nav-links.open{display:flex}
+ .mobile-toggle{display:block}
+ .about .cols{grid-template-columns:1fr}
+ section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top">Main Street <span>General Contractors</span></a>
+<button class="mobile-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+<div class="nav-links" id="navlinks">
+<a href="#services">Services</a><a href="#about">About</a><a href="#proof">How It Works</a><a href="#contact">Contact</a>
+<a class="btn" href="tel:+18005101028">Call (800) 510-1028</a>
+</div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<span class="kicker">🏠 Licensed Roofing & General Contractor — Chicagoland</span>
+<h1>A licensed contractor your home can count on.</h1>
+<p class="sub">Roofing, siding, carpentry, and full general contracting — with active Illinois licenses, 73+ permits pulled since 2017, and a 5-star customer record.</p>
+<div class="hero-ctas">
+<a class="btn" href="tel:+18005101028">&#128222; Call (800) 510-1028</a>
+<a class="btn btn-outline" href="mailto:Mainstgc@gmail.com">✉️ Email Us</a>
+</div></div></header>
+
+<div class="trust"><div class="wrap">
+<div class="t">Licensed in Illinois<small>Roofing + General Contractor</small></div>
+<div class="t">73+ Permits Since 2017<small>Proven, active track record</small></div>
+<div class="t">Top 6% of IL Contractors<small>BuildZoom score ranking</small></div>
+<div class="t">5.0 ★ Reviews<small>Across customer reviews</small></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2 class="sec">Our Services</h2>
+<p class="secsub">Roofing and general contracting — licensed, proven, and accountable.</p>
+<div class="grid3">
+<div class="card"><div class="icon">🏠</div><h3>Roofing</h3><p>Licensed roofing contractor for installs, replacements, and repairs — done to code, permitted properly.</p></div>
+<div class="card"><div class="icon">🧱</div><h3>Siding & Exterior</h3><p>Siding and exterior wall finishes that protect and modernize your home.</p></div>
+<div class="card"><div class="icon">🪚</div><h3>Carpentry</h3><p>Skilled carpentry work — framing, trim, and finish work done right.</p></div>
+<div class="card"><div class="icon">🔨</div><h3>General Contracting</h3><p>Full general contracting with trades — one accountable contractor for your whole project.</p></div>
+<div class="card"><div class="icon">⛈️</div><h3>Storm Recovery</h3><p>Storm damage assessment and repair — we document damage and restore your home.</p></div>
+<div class="card"><div class="icon">🏡</div><h3>Remodeling</h3><p>Kitchens, baths, basements, and additions — remodeling managed end to end.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap"><div class="cols">
+<div>
+<h2>Licensed. Proven. Accountable.</h2>
+<p>Main Street General Contractors Inc. is a licensed Illinois roofing contractor and general contractor based in Downers Grove, serving the greater Lombard and Chicagoland area.</p><p>We've pulled 73+ building permits since 2017 and rank in the top 6% of Illinois licensed contractors by BuildZoom score. That's not marketing — it's a public, verifiable track record of real projects completed for real homeowners.</p>
+<ul class="checks">
+<li>Licensed roofing contractor (IL)</li>
+<li>Licensed general contractor with trades</li>
+<li>73+ permits pulled since 2017</li>
+<li>Top 6% of Illinois contractors</li>
+<li>5.0-star customer reviews</li>
+</ul>
+</div>
+<div>
+<div class="cbox"><div class="clabel">A track record you can check</div><p style="text-align:left;font-size:1rem">73+ building permits since 2017. Active Illinois licenses verified by independent boards. 5.0-star reviews.<br><br>When a contractor's record is public, you don't have to take their word for it.</p></div>
+</div>
+</div></div></section>
+
+<section id="proof"><div class="wrap">
+<h2 class="sec">How Your Project Works</h2>
+<p class="secsub">Clear process, accountable contractor.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Free estimate</h3><p>Call or email — we assess your project and give you an honest quote.</p></div>
+<div class="step"><div class="num">2</div><h3>Licensed, permitted work</h3><p>We pull the right permits and do the work to code — no shortcuts.</p></div>
+<div class="step"><div class="num">3</div><h3>Done & verified</h3><p>Final walkthrough, clean site, and work backed by a licensed contractor.</p></div>
+</div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+<h2 class="sec">Common Questions</h2>
+<p class="secsub">Straight answers before you call.</p>
+<details><summary>Are you a licensed contractor?</summary><p>Yes. We hold active Illinois roofing contractor and general contractor licenses, verified by independent license boards.</p></details>
+<details><summary>Do you offer free estimates?</summary><p>Yes — free estimates on every project.</p></details>
+<details><summary>What areas do you serve?</summary><p>Downers Grove, Lombard, and the greater Chicagoland area.</p></details>
+<details><summary>How is your track record?</summary><p>We've pulled 73+ building permits since 2017 and rank in the top 6% of Illinois licensed contractors.</p></details>
+</div></section>
+
+<div class="cta-band">
+<h2>Work with a contractor whose record speaks for itself.</h2>
+<p>Call Main Street General Contractors today for a free estimate.</p>
+<a class="btn btn-outline" href="tel:+18005101028">&#128222; Call (800) 510-1028 — Free Estimate</a>
+</div>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2 class="sec">Get In Touch</h2>
+<p class="secsub">One call is all it takes to get your free, no-pressure quote.</p>
+<div class="cols">
+<div class="cbox"><div class="clabel">Call</div><a href="tel:+18005101028">(800) 510-1028</a><p>Mon–Fri 9–5</p></div>
+<div class="cbox"><div class="clabel">Email</div><a href="mailto:Mainstgc@gmail.com">Mainstgc@gmail.com</a><p>We reply promptly</p></div>
+<div class="cbox"><div class="clabel">Visit Us</div><div class="darktext">5202 Washington St #10<br>Downers Grove, IL</div></div>
+</div></div></section>
+
+<footer>
+<div class="fbrand">Main Street General Contractors Inc.</div>
+<div>5202 Washington St #10, Downers Grove, IL — Serving Lombard & Chicagoland</div>
+<div style="margin-top:10px">&copy; 2026 Main Street General Contractors Inc.. All rights reserved.</div>
+</footer>
+</body>
+</html>
